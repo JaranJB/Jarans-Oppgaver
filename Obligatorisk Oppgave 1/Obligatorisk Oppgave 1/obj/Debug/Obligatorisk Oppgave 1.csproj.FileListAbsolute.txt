@@ -1,0 +1,7 @@
+C:\Users\audjo\source\repos\Obligatorisk Oppgave 1\Obligatorisk Oppgave 1\bin\Debug\Obligatorisk Oppgave 1.exe.config
+C:\Users\audjo\source\repos\Obligatorisk Oppgave 1\Obligatorisk Oppgave 1\bin\Debug\Obligatorisk Oppgave 1.exe
+C:\Users\audjo\source\repos\Obligatorisk Oppgave 1\Obligatorisk Oppgave 1\bin\Debug\Obligatorisk Oppgave 1.pdb
+C:\Users\audjo\source\repos\Obligatorisk Oppgave 1\Obligatorisk Oppgave 1\obj\Debug\Obligatorisk Oppgave 1.csprojAssemblyReference.cache
+C:\Users\audjo\source\repos\Obligatorisk Oppgave 1\Obligatorisk Oppgave 1\obj\Debug\Obligatorisk Oppgave 1.csproj.CoreCompileInputs.cache
+C:\Users\audjo\source\repos\Obligatorisk Oppgave 1\Obligatorisk Oppgave 1\obj\Debug\Obligatorisk Oppgave 1.exe
+C:\Users\audjo\source\repos\Obligatorisk Oppgave 1\Obligatorisk Oppgave 1\obj\Debug\Obligatorisk Oppgave 1.pdb
