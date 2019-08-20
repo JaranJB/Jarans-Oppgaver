@@ -13,7 +13,7 @@ namespace Obligatorisk_Oppgave_1
 
             List<Person> _list = new List<Person>();
             LagListe(_list);
-            Console.WriteLine("Skriv hjelp, liste eller vis+\"IDNummer\"");
+            Console.WriteLine("Skriv hjelp, liste eller vis");
             start:
             var ønske = Console.ReadLine().ToLower();
 
@@ -27,22 +27,20 @@ namespace Obligatorisk_Oppgave_1
                 foreach (var person in _list)
                 {
                     person.Show();
+                    Console.WriteLine();
                 }
             }
 
-            if (ønske.Contains("vis") && ønske.Any(char.IsDigit))
+            if (ønske == "vis")
             {
-                int sisteTall = Convert.ToInt32(ønske.Substring(ønske.Length - 1, 1));
-                var person = _list[sisteTall - 1];
+                Console.WriteLine("Skriv inn hvilken ID du ønsker");
+                var RightNumber = Convert.ToInt32(Console.ReadLine());
+                var person = _list[RightNumber - 1];
                 person.Show();
-                var parent1 = person.Father;
-                var parent2 = person.Mother;
-                if (parent1 != null) parent1.Show();
-                if (parent2 != null) parent2.Show();
                 foreach (var one in _list)
                 {
-                    if (one.Father == person) one.Show();
-                    if (one.Mother == person) one.Show();
+                    if (one.Father == person) Console.WriteLine("Barn: " + one.FirstName);
+                    if (one.Mother == person) Console.WriteLine("Barn: " + one.FirstName);
                 }
             }
             if (ønske != "hjelp" && ønske != "vis" && ønske != "liste")
@@ -52,11 +50,11 @@ namespace Obligatorisk_Oppgave_1
             }
             goto start;
         }
+
         public static void VisInfo()
         {
             Console.WriteLine("Skriv Liste for å se alle personene.");
-            Console.WriteLine("Skriv vis pluss ID nummer for å se en spesefikk person.");
-            Console.WriteLine("OBS. Skriver du vis må det ikke være noe etter nummeret.");
+            Console.WriteLine("Skriv vis for å se en spesefikk person.");
         }
 
         public static void LagListe(List<Person> _list)

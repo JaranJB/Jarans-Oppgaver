@@ -35,10 +35,6 @@ namespace Obligatorisk_Oppgave_1
                 int sisteTall = Convert.ToInt32(ønske.Substring(ønske.Length - 1, 1));
                 var person = _list[sisteTall - 1];
                 person.Show();
-                var parent1 = person.Father;
-                var parent2 = person.Mother;
-                if (parent1 != null) parent1.Show();
-                if (parent2 != null) parent2.Show();
                 foreach (var one in _list)
                 {
                     if (one.Father == person) one.Show();
