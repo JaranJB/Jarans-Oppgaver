@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Obligatorisk_Oppgave_1
 {
@@ -39,8 +38,7 @@ namespace Obligatorisk_Oppgave_1
                 person.Show();
                 foreach (var one in _list)
                 {
-                    if (one.Father == person) Console.WriteLine("Barn: " + one.FirstName);
-                    if (one.Mother == person) Console.WriteLine("Barn: " + one.FirstName);
+                    if (one.Father == person || one.Mother == person) Console.WriteLine("Barn: " + one.FirstName);
                 }
             }
             if (ønske != "hjelp" && ønske != "vis" && ønske != "liste")
