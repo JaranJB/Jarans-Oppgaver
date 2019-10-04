@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace SimpleChess
 {
     public abstract class Piece
